@@ -14,9 +14,9 @@ This guide will walk you through how to get up and running with NFT transactions
 
 Dreamerly has three components:
 
-- Developer Dashboard: Your one-stop shop for all transaction logs, API keys, billing and more.
+- Dreamerly Dashboard: Your one-stop shop for all transaction logs, API keys, billing and more.
 - Backend HTTP REST APIs: Your backend uses the Dreamerly REST APIs to perform actions such as creating new wallets, deploying NFT collections, minting NFTs, etc.
-- Frontend SDKs: Your iOS and Android apps bundle Dreamerly's SDKs to handle in-app purchases and transactions.
+- Frontend SDKs: Your iOS apps bundle Dreamerly's SDKs to handle in-app purchases and transactions.
 
 ### Step 1: Create a Dreamerly account
 
@@ -26,7 +26,7 @@ We recommend using a company account when registering for Dreamerly and setting 
 
 ### Step 2: Create a project
 
-Navigate to Dreamerly dashboard and add a new project. **(TODO: NEED TO FIX THE DETAILS AND ADD A SCREENSHOT)**
+Navigate to the Dreamerly Dashboard and add a new project. **(TODO: NEED TO FIX THE DETAILS AND ADD A SCREENSHOT)**
 
 Service credentials need to be set up for Dreamerly to communicate with the app stores on your behalf. **(TODO: NEED TO FIX THE DETAILS AND ADD A SCREENSHOT)**
 
