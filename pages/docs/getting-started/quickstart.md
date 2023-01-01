@@ -4,40 +4,60 @@ Subtitle: Get up and running with mobile NFT transactions.
 References:
   - https://www.revenuecat.com/docs/getting-started
   - https://docs.dyte.io/getting-started
+
+TODO: Replace the callout with:
+
+{% callout title="Test mode and Live mode" %}
+Each Dreamerly account includes a test and live mode in two separate environments:
+
+- Test: [https://test-app.dreamerly.com](https://test-app.dreamerly.com)
+- Live: [https://app.dreamerly.com](https://app.dreamerly.com)
+
+Test mode is used to configure projects with smart contracts that are deployed to a testnet. Live mode is for mainnet smart contracts.
+
+{% /callout %}
 ---
 
 # Quickstart
 
 This guide will walk you through how to get up and running with NFT transactions and Dreamerly's SDK with only a few lines of code.
 
-### The Dreamerly architecture
+{% callout title="Test mode" type="caution" %}
+Dreamerly is in test mode. We only support smart contracts deployed to the Polygon testnet at the moment. The live mode for mainnet smart contracts will launch soon.
+{% /callout %}
 
-Dreamerly has three components:
+## 1. Create a Dreamerly account
 
-- Dreamerly Dashboard: Your one-stop shop for all transaction logs, API keys, billing and more.
-- Backend HTTP REST APIs: Your backend uses the Dreamerly REST APIs to perform actions such as creating new wallets, deploying NFT collections, minting NFTs, etc.
-- Frontend SDKs: Your iOS apps bundle Dreamerly's SDKs to handle in-app purchases and transactions.
+Sign up for a new Dreamerly account [here](https://app.dreamerly.com). If you cannot find the verification email, check your spam folder.
 
-### Step 1: Create a Dreamerly account
+We recommend using a company account when registering for Dreamerly.
 
-Sign up for a new Dreamerly account [here](https://app.dreamerly.com).
+## 2. Get test MATIC tokens on the Polygon Mumbai testnet
 
-We recommend using a company account when registering for Dreamerly and setting up your app within a project. You will be able to invite the rest of your team as collaborators on your project.
+Dreamerly's test mode uses the Polygon Mumbai testnet. To deploy an NFT smart contract, you need to fill your wallet with some test MATIC tokens.
 
-### Step 2: Create a project
+See [Get test tokens](/docs/get-test-tokens) to add test MATIC tokens to your wallet address.
 
-Navigate to the Dreamerly Dashboard and add a new project. **(TODO: NEED TO FIX THE DETAILS AND ADD A SCREENSHOT)**
+## 3. Add an NFT collection
 
-Service credentials need to be set up for Dreamerly to communicate with the app stores on your behalf. **(TODO: NEED TO FIX THE DETAILS AND ADD A SCREENSHOT)**
+An NFT collection is a set of NFTs or digital collectibles whose metadata is stored on the blockchain. Before you can start using Dreamerly to mint NFTs, you must create an NFT collection and deploy its smart contract. In the test mode, Dreamerly deploys NFT smart contracts on the Polygon Mumbai testnet.
 
-### Step 3: Configure an NFT collection
+To create a new NFT collection, click on the **Create collection** button on the [Collections page](https://app.dreamerly.com/collections). Note the `collection_id` parameter of the NFT collection, as you will use it to mint NFTs to your end users.
 
-**(TODO: Fill in the details)**
+**ADD SCREENSHOT HERE**
 
-### Step 4: Configure your in-app products
+## 4. Connect with the App Store's backend
 
-**(TODO: Fill in the details)**
+The Apple App Store's app-specific shared secret needs to be set up for Dreamerly to connect with Apple and verify purchase receipts on your behalf. See our [App Store Connect's app-specific shared secret guide](/docs/appstoreconnect-app-specific-shared-secret) for more information.
 
-### Step 5: Using Dreamerly's SDK
+## 5. Configure app store's products
+
+TBD
+
+## 6. Using the Dreamerly SDK
 
 Our SDK seamlessly implements NFT purchases and transactions across platforms while syncing tokens with the Dreamerly server.
+
+## Sample apps
+
+To download more complete examples of integrating the SDK, head over to our sample app resources.
