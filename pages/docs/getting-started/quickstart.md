@@ -50,9 +50,19 @@ To create a new NFT collection, click on the **Create collection** button on the
 
 The Apple App Store's app-specific shared secret needs to be set up for Dreamerly to connect with Apple and verify purchase receipts on your behalf. See our [App Store Connect's app-specific shared secret guide](/docs/appstoreconnect-app-specific-shared-secret) for more information.
 
-## 5. Configure app store's products
+## 5. Configure the App Store's products
 
-TBD
+Before you can start using Dreamerly to fetch NFTs, you must configure your products in the App Store. See our guide for [App Store Connect](/docs/ios-products) for help navigating this process.
+
+If you are selling iOS products, be sure to sign your 'Paid Applications Agreement' and fill out your banking and tax information in [App Store Connect](https://appstoreconnect.apple.com/) > [Agreements, Tax, and Banking](https://appstoreconnect.apple.com/WebObjects/iTunesConnect.woa/da/jumpTo?page=contracts). This needs to be completed before you can test any purchases.
+
+{% image src="https://dreamerly-prod-site-assets.s3.amazonaws.com/docs/quickstart-20230102.webp" alt="Complete your banking and tax information in App Store Connect" %}
+Complete your banking and tax information in App Store Connect.
+{% /image %}
+
+{% callout title="Want to skip the store setup while testing?" type="info" %}
+On iOS, you can delay configuring products in App Store Connect by testing with StoreKit Configuration files instead. These config files require minimal setup and are configurable via Xcode directly.
+{% /callout %}
 
 ## 6. Using the Dreamerly SDK
 
