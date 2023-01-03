@@ -42,9 +42,11 @@ See [Get test tokens](/docs/get-test-tokens) to add test MATIC tokens to your wa
 
 An NFT collection is a set of NFTs or digital collectibles whose metadata is stored on the blockchain. Before you can start using Dreamerly to mint NFTs, you must create an NFT collection and deploy its smart contract. In the test mode, Dreamerly deploys NFT smart contracts on the Polygon Mumbai testnet.
 
-To create a new NFT collection, click on the **Create collection** button on the [Collections page](https://app.dreamerly.com/collections). Note the `collection_id` parameter of the NFT collection, as you will use it to mint NFTs to your end users.
+To create a new NFT collection, click on the **Create collection** button on the [Collections page](https://app.dreamerly.com/collections). A smart contract corresponding to the NFT collection will be deployed to the blockchain. Note the "COLLECTION ID" value of the NFT collection, as you will use it to mint NFTs to your end users.
 
-**ADD SCREENSHOT HERE**
+{% image src="https://dreamerly-prod-site-assets.s3.amazonaws.com/docs/quickstart-20230102-1.webp" alt="Create and deploy your NFT collection" %}
+Create and deploy your NFT collection.
+{% /image %}
 
 ## 4. Connect with the App Store's backend
 
