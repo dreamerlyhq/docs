@@ -32,13 +32,7 @@ Sign up for a new Dreamerly account [here](https://app.dreamerly.com). If you ca
 
 We recommend using a company account when registering for Dreamerly.
 
-## 2. Get test MATIC tokens on the Polygon Mumbai testnet
-
-Dreamerly's test mode uses the Polygon Mumbai testnet. To deploy an NFT smart contract, you need to fill your wallet with some test MATIC tokens.
-
-See [Get test tokens](/docs/get-test-tokens) to add test MATIC tokens to your wallet address.
-
-## 3. Add an NFT collection
+## 2. Add an NFT collection
 
 An NFT collection is a set of NFTs or digital collectibles whose metadata is stored on the blockchain. Before you can start using Dreamerly to mint NFTs, you must create an NFT collection and deploy its smart contract. In the test mode, Dreamerly deploys NFT smart contracts on the Polygon Mumbai testnet.
 
@@ -48,13 +42,13 @@ To create a new NFT collection, click on the **Create collection** button on the
 Create and deploy your NFT collection.
 {% /image %}
 
-## 4. Connect with the App Store's backend
+## 3. Connect with the App Store's backend
 
 The Apple App Store's app-specific shared secret needs to be set up for Dreamerly to connect with Apple and verify purchase receipts on your behalf. See our [App Store Connect's app-specific shared secret guide](/docs/appstoreconnect-app-specific-shared-secret) for more information.
 
-## 5. Configure the App Store's products
+## 4. Configure the App Store's products
 
-Before you can start using Dreamerly to fetch NFTs, you must configure your products in the App Store. See our guide for [App Store Connect](/docs/ios-products) for help navigating this process.
+To enable your in-app purchase product offerings, configure your products in the App Store. See our [iOS product setup guide for App Store Connect](/docs/ios-products) for help navigating this process.
 
 If you are selling iOS products, be sure to sign your Paid Applications Agreement and fill out your banking and tax information in [App Store Connect](https://appstoreconnect.apple.com/) > [Agreements, Tax, and Banking](https://appstoreconnect.apple.com/WebObjects/iTunesConnect.woa/da/jumpTo?page=contracts). This needs to be completed before you can test any purchases.
 
@@ -66,7 +60,7 @@ Complete your banking and tax information in App Store Connect.
 On iOS, you can delay configuring products in App Store Connect by testing with StoreKit Configuration files instead. These config files require minimal setup and are configurable via Xcode directly.
 {% /callout %}
 
-## 6. Using the Dreamerly SDK
+## 5. Using the Dreamerly SDK
 
 Our SDK seamlessly implements NFT purchases and transactions across platforms while syncing tokens with the Dreamerly server.
 
