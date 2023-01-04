@@ -56,7 +56,7 @@ The Apple App Store's app-specific shared secret needs to be set up for Dreamerl
 
 Before you can start using Dreamerly to fetch NFTs, you must configure your products in the App Store. See our guide for [App Store Connect](/docs/ios-products) for help navigating this process.
 
-If you are selling iOS products, be sure to sign your 'Paid Applications Agreement' and fill out your banking and tax information in [App Store Connect](https://appstoreconnect.apple.com/) > [Agreements, Tax, and Banking](https://appstoreconnect.apple.com/WebObjects/iTunesConnect.woa/da/jumpTo?page=contracts). This needs to be completed before you can test any purchases.
+If you are selling iOS products, be sure to sign your Paid Applications Agreement and fill out your banking and tax information in [App Store Connect](https://appstoreconnect.apple.com/) > [Agreements, Tax, and Banking](https://appstoreconnect.apple.com/WebObjects/iTunesConnect.woa/da/jumpTo?page=contracts). This needs to be completed before you can test any purchases.
 
 {% image src="https://dreamerly-prod-site-assets.s3.amazonaws.com/docs/quickstart-20230102.webp" alt="Complete your banking and tax information in App Store Connect" %}
 Complete your banking and tax information in App Store Connect.

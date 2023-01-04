@@ -1,0 +1,100 @@
+---
+Title: iOS product setup
+Subtitle: Set up your in-app purchases in App Store Connect.
+References:
+  - https://www.revenuecat.com/docs/authentication
+  https://stripe.com/docs/keys
+---
+
+# iOS product setup
+
+To set up products for iOS, iPadOS, macOS, tvOS, and watchOS, sign in to your [App Store Connect account](https://appstoreconnect.apple.com/). App Store Connect is Apple's central hub for managing app releases, TestFlight, in-app purchases, and more. This guide assumes that you have basic knowledge of App Store Connect and have set up an app for in-app purchases. For more information, visit [Apple's documentation and guides for App Store Connect](https://developer.apple.com/support/app-store-connect/).
+
+{% callout title="Sign your Paid Applications Agreement" type="info" %}
+Before setting up your products, make sure you have signed the latest Paid Applications Agreement in the [Agreements, Tax, and Banking section](https://appstoreconnect.apple.com/WebObjects/iTunesConnect.woa/da/jumpTo?page=contracts) in App Store Connect. You will not be able to test in-app purchases until the latest version of this agreement is signed.
+{% /callout %}
+
+## Create an in-app purchase
+
+To create an in-app purchase, go to [App Store Connect](https://developer.apple.com/support/app-store-connect/) > [My Apps](https://developer.apple.com/support/app-store-connect/apps) and select your app from the list.
+
+{% image src="https://dreamerly-prod-site-assets.s3.amazonaws.com/docs/ios-products-20230103.webp" alt="View your iOS apps" %}
+View your iOS apps in App Store Connect.
+{% /image %}
+
+Navigate to the **Features** section in the left-side menu, and select **In-App Purchases**. Click the **+** icon next to the heading to create an in-app purchase.
+
+{% image src="https://dreamerly-prod-site-assets.s3.amazonaws.com/docs/ios-products-20230103-1.webp" alt="Find the In-app Purchases page" %}
+Find the **In-app Purchases** page in App Store Connect.
+{% /image %}
+
+{% callout title="Tip" type="info" %}
+If you don't see the **In-App Purchases** option, ensure your developer account has accepted all applicable contracts and provided tax and banking information in the [Agreements, Tax, and Banking section](https://appstoreconnect.apple.com/WebObjects/iTunesConnect.woa/da/jumpTo?page=contracts) in App Store Connect.
+{% /callout %}
+
+Fill in the **Create an In-App Purchase** dialog with your product's information.
+
+- **Type:** Select between consumables (products that can be purchased multiple times) and non-consumables (products that can be purchased only once). We recommend treating the entire NFT collection as a single consumable product.
+
+{% callout title="App Store's product limit" type="caution" %}
+App Store Connect has a limit of 10,000 products per app. So if you create a separate product for each NFT, be mindful of the limit.
+{% /callout %}
+
+- **Reference name:** The reference name will be used on App Store Connect and in Sales and Trends reports. It won't be displayed on the App Store. We recommend using a human readable description of the product you set up. The name can't be longer than 64 characters.
+
+- **Product ID:** The product ID is a unique alphanumeric ID that is used for accessing your product in development and syncing with RevenueCat. **After you use a Product ID for one product in App Store Connect, it can’t be used again across any of your apps, even if the product is deleted.** We recommend using a consistent naming scheme for your product IDs, e.g. `<app>_<nft collection>_<price>_<nft>`
+
+{% image src="https://dreamerly-prod-site-assets.s3.amazonaws.com/docs/ios-products-20230103-2.webp" alt="Create your in-app purchase product" %}
+Create your in-app purchase product.
+{% /image %}
+
+Click the **Create** button.
+
+## Set price
+
+Once your product is created, you will be able to set its price. In the **Price Schedule** section, select a **Price** from a dropdown in your default currency. Apple will automatically set the price in all App Store regions based off the price and currency you selected. You'll have the option to edit these, but we recommend sticking with the default.
+
+Once you are done, click the **Save** button on the top right.
+
+{% image src="https://dreamerly-prod-site-assets.s3.amazonaws.com/docs/ios-products-20230103-3.webp" alt="Set price for your iOS product" %}
+Set the price for your iOS product.
+{% /image %}
+
+## Add localization
+
+To personalize the product offerings based on your users' locations, you can create the localized display names and descriptions.
+
+In the **App Store Localization** section, click the **Add Localization** button.
+
+{% image src="https://dreamerly-prod-site-assets.s3.amazonaws.com/docs/ios-products-20230103-4.webp" alt="Add localization" %}
+Add localization.
+{% /image %}
+
+In the **Add App Store Localization** popup, choose the **Localization** you with to set up, and provide the corresponding **Display Name** and **Description**.
+
+{% image src="https://dreamerly-prod-site-assets.s3.amazonaws.com/docs/ios-products-20230103-5.webp" alt="Fill in the localization details" %}
+Fill in the localization details.
+{% /image %}
+
+The Display Name and Description will be visible to users on the App Store and in their in-app purchase management settings.
+
+## Add review information
+
+You also need to provide a screenshot and review notes for the App Store reviewers.
+
+- **Screenshot:** A required image of your in-app purchase paywall for the reviewers.
+- **Review Notes:** An optional text area to clarify anything about your in-app purchase for the reviewers.
+
+{% image src="https://dreamerly-prod-site-assets.s3.amazonaws.com/docs/ios-products-20230103-6.webp" alt="Add review information" %}
+Add review information.
+{% /image %}
+
+{% callout title="Remember to add a screenshot" type="caution" %}
+A mistake developers sometimes make is overlooking the screenshot. You won't be able to submit your product for review without it.
+{% /callout %}
+
+## Integrate with Dreamerly
+
+Finally, click the **Submit for Review** button on the top right corner to add your in-app purchase product to the review queue.
+
+Continue with our [Quickstart](/docs/quickstart) guide to integrate your new App Store Connect's in-app purchase product with Dreamerly.
