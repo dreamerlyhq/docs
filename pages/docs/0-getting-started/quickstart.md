@@ -64,6 +64,12 @@ On iOS, you can delay configuring products in App Store Connect by testing with 
 
 Our SDK seamlessly implements NFT purchases and transactions across platforms while syncing tokens with the Dreamerly server.
 
+### Installation
+
+Install the SDK on your preferred platform with our installation guides below.
+
+- [iOS installation](/docs/install-ios-sdk)
+
 ## Sample apps
 
 To download more complete examples of integrating the SDK, head over to our sample app resources.
